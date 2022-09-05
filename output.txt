@@ -1,0 +1,1 @@
+{"tokens": ["The", "children", "enjoyed", "the", "visit", "."], "tags": ["O-DET", "O-N-n.PERSON", "O-V-v.emotion", "O-DET", "O-N-n.EVENT", "O-PUNCT"]}
