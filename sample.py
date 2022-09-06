@@ -27,7 +27,11 @@ data = [{"tokens": tokens, "upos_tags":upos_tags, "lemmas": lemmas}]
 # predict
 
 
-print(predictor.predict_json({"tokens": tokens, "upos_tags": upos_tags, "lemmas": lemmas}))
+# print(predictor.predict_json({"tokens": tokens, "upos_tags": upos_tags, "lemmas": lemmas}))
+result = predictor.predict_json({"tokens": tokens, "upos_tags": upos_tags, "lemmas": lemmas})
 
+for index, (to, ta) in enumerate(zip(result["tokens"], result["tags"])):
+    print(index)
+    print(to, ta)
 end = time.time()
 print((end-start)*1000)
